@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speech-to-Text Notepad</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <h1>🎙️ Speech-to-Text Notepad</h1>
+
+  <textarea id="noteArea" placeholder="Your speech will appear here..."></textarea><br>
+
+  <div class="btn-group">
+    <button id="startBtn">Start</button>
+    <div class="inside-btn">
+        <button id="saveBtn">Save Note</button>
+        <button id="clearBtn">Clear Note</button>
+    </div>
+  </div>
+  <div class="notes-section">
+    <h1>📝 Saved Notes</h1>
+    <button id="deleteAllBtn" title="Delete All Notes">
+      <i class="bi bi-trash"></i>
+    </button>
+
+  </div>
+  <ul id="notesList"></ul>
+
+  <script src="index.js"></script>
+</body>
+</html>

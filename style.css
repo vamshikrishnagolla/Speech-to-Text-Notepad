@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+  color: #f44336;
+}
+
+h2{
+  font-size: 52px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.btn-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.insidebtn{
+  display: flex;
+  margin-top: 15px;
+}
+
+#startBtn {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* glowing animation when active */
+#startBtn.glow {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px red;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px red;
+  }
+}
+
+
+
+#saveBtn {
+  background: #2196f3;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+#clearBtn {
+  background: #ff9800;
+  color: white;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.notes-section{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#deleteAllBtn {
+  background: none;      
+  border: none;           
+  cursor: pointer;
+  font-size: 22px;        
+  border-radius: 50%;     
+  transition: transform 0.2s ease; 
+}
+
+#deleteAllBtn:hover {
+  transform: scale(1.2);  
+  color: red; 
+  animation: shake 0.5s ease-in-out 0s infinite;           
+}
+
+@keyframes shake {
+  0% { transform: scale(1.2) rotate(0deg); }
+  25% { transform: scale(1.2) rotate(-10deg); }
+  50% { transform: scale(1.2) rotate(10deg); }
+  75% { transform: scale(1.2) rotate(-10deg); }
+  100% { transform: scale(1.2) rotate(0deg); }
+}
+
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 5px auto;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+
